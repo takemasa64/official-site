@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>武田 和将 (TAKEDA KAZUMASA) | Official Website</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Zen Maru Gothic & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                pink: '#F2A4B4',
+                coral: '#F79679',
+                yellow: '#F5CE62',
+                blue: '#7DC4E4',
+                navy: '#124874',
+                teal: '#2F9C95',
+                bg: '#FAFAF8',
+              }
+            },
+            fontFamily: {
+              sans: ['"Zen Maru Gothic"', '"Plus Jakarta Sans"', 'sans-serif'],
+            },
+            borderRadius: {
+              '4xl': '2rem',
+              '5xl': '2.5rem',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Zen Maru Gothic', sans-serif;
+        background-color: #FAFAF8;
+        color: #333333;
+        overflow-x: hidden;
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-18px) rotate(4deg); }
+      }
+      @keyframes floatReverse {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(15px) rotate(-4deg); }
+      }
+      .animate-float1 { animation: floatSlow 8s ease-in-out infinite; }
+      .animate-float2 { animation: floatReverse 10s ease-in-out infinite; }
+      
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FAFAF8;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #F2A4B4;
+        border-radius: 5px;
+      }
+    </style>
+</head>
+<body class="relative min-h-screen text-gray-800 antialiased selection:bg-brand-pink selection:text-white">
+
+    <!-- 背景の装飾オーガニックシェイプ -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        <div class="absolute -top-16 -left-16 w-64 h-64 md:w-96 md:h-96 bg-brand-pink/30 rounded-full blur-2xl animate-float1"></div>
+        <div class="absolute -top-20 -right-20 w-72 h-72 md:w-[28rem] md:h-[28rem] bg-brand-coral/25 rounded-full blur-3xl animate-float2"></div>
+        <div class="absolute top-1/3 -left-20 w-80 h-80 bg-brand-yellow/30 rounded-full blur-3xl animate-float2"></div>
+        <div class="absolute top-1/2 -right-16 w-80 h-80 bg-brand-blue/30 rounded-full blur-3xl animate-float1"></div>
+        <div class="absolute -bottom-20 -left-12 w-72 h-72 bg-brand-navy/15 rounded-full blur-3xl animate-float1"></div>
+        <div class="absolute -bottom-16 -right-12 w-80 h-80 bg-brand-teal/20 rounded-full blur-3xl animate-float2"></div>
+    </div>
+
+    <!-- ナビゲーションバー -->
+    <header class="sticky top-4 z-50 px-4 max-w-5xl mx-auto">
+        <nav class="bg-white/80 backdrop-blur-md border border-white/60 shadow-lg shadow-gray-200/50 rounded-full px-6 py-3 flex items-center justify-between transition-all">
+            <a href="#" class="flex items-center gap-2 group">
+                <span class="w-8 h-8 rounded-full bg-brand-pink flex items-center justify-center text-white text-sm font-bold shadow-md group-hover:scale-110 transition-transform"></span>
+                <span class="font-bold text-lg tracking-wide text-brand-navy">武田 和将</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-6 font-medium text-sm text-gray-600">
+                <a href="#about" class="hover:text-brand-pink transition-colors">プロフィール</a>
+                <a href="#on-air" class="hover:text-brand-pink transition-colors">出演メディア</a>
+                <a href="#works" class="hover:text-brand-pink transition-colors">過去の実績</a>
+                <a href="#sns" class="hover:text-brand-pink transition-colors">SNS & Contact</a>
+            </div>
+
+            <a href="#contact" class="px-4 py-2 bg-brand-navy hover:bg-brand-navy/90 text-white text-xs md:text-sm font-bold rounded-full shadow-md transition-all hover:shadow-lg hover:-translate-y-0.5">
+                お仕事依頼
+            </a>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="relative z-10 max-w-5xl mx-auto px-4 pt-8 pb-20 space-y-24">
+
+        <!-- ヒーローセクション -->
+        <section class="pt-6 md:pt-12 text-center md:text-left flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div class="relative group">
+                <div class="absolute -inset-4 bg-gradient-to-tr from-brand-pink via-brand-yellow to-brand-blue rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-500 animate-pulse"></div>
+                
+                <div class="relative w-56 h-56 md:w-64 md:h-64 rounded-full p-2 bg-white shadow-2xl overflow-hidden">
+                    <div class="w-full h-full rounded-full overflow-hidden bg-brand-pink/10 flex items-center justify-center relative">
+                        <img src="1762265561586.jpg" alt="武田和将" class="w-full h-full object-cover rounded-full border-4 border-white shadow-inner" onerror="this.onerror=null; this.src='profile.jpg';">
+                    </div>
+                </div>
+                <div class="absolute bottom-2 right-2 bg-white px-4 py-1.5 rounded-full shadow-lg border border-gray-100 flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span class="text-xs font-bold text-gray-700">On Air & Podcast</span>
+                </div>
+            </div>
+
+            <div class="flex-1 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-pink/20 text-brand-navy text-xs font-bold">
+                    <span>✨</span>
+                    <span>ラジオパーソナリティ / 俳優 / モデル / MC</span>
+                </div>
+                
+                <h1 class="text-3xl md:text-5xl font-black text-gray-900 leading-tight">
+                    武田 和将
+                    <span class="block text-base md:text-xl font-normal text-gray-500 mt-1 font-sans">TAKEDA KAZUMASA</span>
+                </h1>
+
+                <p class="text-gray-600 leading-relaxed text-sm md:text-base max-w-xl">
+                    声と笑顔で、あなたの毎日にちょっとした温もりと楽しさをお届けします！<br class="hidden sm:inline">
+                    ラジオ生放送パーソナリティ、ポッドキャスト配信をはじめ、モデル、俳優、各種イベントMCとして幅広く活動中。
+                </p>
+
+                <div class="pt-4 flex flex-wrap gap-3 justify-center md:justify-start">
+                    <a href="#sns" class="px-6 py-3 bg-brand-pink hover:bg-brand-pink/90 text-white font-bold text-sm rounded-2xl shadow-lg shadow-brand-pink/30 hover:shadow-xl transition-all hover:-translate-y-0.5 flex items-center gap-2">
+                        <i class="fa-solid fa-heart text-white"></i>
+                        <span>SNSをフォローする</span>
+                    </a>
+                    <a href="mailto:tkofficial64.office@gmail.com" class="px-6 py-3 bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 font-bold text-sm rounded-2xl shadow-md transition-all hover:-translate-y-0.5 flex items-center gap-2">
+                        <i class="fa-regular fa-envelope text-brand-navy"></i>
+                        <span>メールで問い合わせ</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- プロフィールセクション -->
+        <section id="about" class="scroll-mt-24">
+            <div class="bg-white/80 backdrop-blur-md rounded-4xl p-8 md:p-12 border border-white shadow-xl shadow-gray-200/40 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-brand-yellow/20 rounded-bl-full pointer-events-none"></div>
+
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 rounded-2xl bg-brand-yellow flex items-center justify-center text-white font-bold text-lg shadow-md">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">プロフィール</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-700">
+                    <div class="md:col-span-2 space-y-4">
+                        <p class="leading-relaxed">
+                            愛知県名古屋市出身。ラジオパーソナリティを中心に、俳優、アパレルモデル、イベント司会（MC）としてマルチに活動中。
+                        </p>
+                        <p class="leading-relaxed">
+                            元テーマパークマンで教員免許を所持。体験学習にも携わる中で、楽しい空間を生み出すことを日々追求中。好奇心からワーホリでニュージーランド滞在も経験。親しみやすく柔らかいトークと明るいキャラクターで、どんな空間も温かく盛り上げます。
+                        </p>
+                        <div class="pt-2">
+                            <h4 class="font-bold text-brand-navy text-sm mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-heart text-brand-pink"></i> 好きなこと・趣味
+                            </h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-brand-pink/10 text-brand-navy border border-brand-pink/20 rounded-full text-xs font-bold">🥁 ドラム演奏</span>
+                                <span class="px-3 py-1 bg-brand-yellow/20 text-amber-900 border border-brand-yellow/30 rounded-full text-xs font-bold">🍞 パン作り</span>
+                                <span class="px-3 py-1 bg-brand-blue/20 text-brand-navy border border-brand-blue/30 rounded-full text-xs font-bold">♨️ 銭湯・サウナ巡り</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50/80 p-5 rounded-3xl border border-gray-100 space-y-3 text-sm">
+                        <h3 class="font-bold text-brand-navy border-b border-gray-200 pb-2">基本情報</h3>
+                        <div class="space-y-2.5">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">名前</span>
+                                <span class="font-bold text-gray-800">武田 和将</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">愛称</span>
+                                <span class="font-bold text-brand-pink">たけまさ</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">出身地</span>
+                                <span class="font-bold text-gray-800">愛知県名古屋市</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">活動領域</span>
+                                <span class="font-medium text-gray-800">ラジオ / 俳優 / モデル / MC</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">活動エリア</span>
+                                <span class="font-medium text-gray-800">埼玉県 / 岐阜県 / 東海・関東</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">公式SNS</span>
+                                <span class="font-bold text-brand-pink">@tkofficial64</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 出演中のラジオ番組・メディア -->
+        <section id="on-air" class="scroll-mt-24 space-y-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-2">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-2xl bg-brand-pink flex items-center justify-center text-white font-bold text-lg shadow-md">
+                        <i class="fa-solid fa-radio"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-800">出演中のメディア・番組</h2>
+                        <p class="text-xs text-gray-500">ラジオ生放送・レギュラー・ポッドキャスト配信中！</p>
+                    </div>
+                </div>
+                <span class="text-xs bg-brand-pink/10 text-brand-pink border border-brand-pink/30 px-3 py-1 rounded-full font-bold self-start md:self-auto">ON AIR SCHEDULING</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- 1. ラジオ川越 KAWAGOE LIVE -->
+                <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 transition-all group relative overflow-hidden flex flex-col justify-between md:col-span-2">
+                    <div class="absolute top-0 right-0 w-28 h-28 bg-brand-pink/15 rounded-bl-full transition-all group-hover:scale-110 pointer-events-none z-0"></div>
+                    <div class="relative z-10">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-3.5 py-1 bg-brand-pink text-white text-xs font-bold rounded-full shadow-sm">第1・3・5 水曜日 16:00-18:30</span>
+                            <span class="text-xs text-brand-pink border border-brand-pink/30 bg-brand-pink/5 px-2.5 py-0.5 rounded-full font-bold">ラジオ川越 / 生放送</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-gray-800 group-hover:text-brand-pink transition-colors mb-2">
+                            〈KAWAGOE LIVE〉LOVE LIKE BOX
+                        </h3>
+                        <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
+                            生放送でお届けする夕方の情報・トーク番組！好きを詰め込んだコーナー盛りだくさんのわちゃわちゃプログラム。
+                        </p>
+                    </div>
+                    <div class="relative z-10 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-gray-500">
+                        <span><i class="fa-solid fa-tower-cell text-brand-pink mr-1"></i> 生放送レギュラー</span>
+                        <span class="text-brand-navy">FM 88.7MHz</span>
+                    </div>
+                </div>
+
+                <!-- 2. FMらら That's awesome! -->
+                <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 transition-all group relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-brand-yellow/20 rounded-bl-full transition-all group-hover:scale-110 pointer-events-none z-0"></div>
+                    <div class="relative z-10">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-3 py-1 bg-brand-yellow text-amber-950 text-xs font-bold rounded-full shadow-sm">毎週土曜日 23:00-23:30</span>
+                            <span class="text-xs text-amber-800 border border-brand-yellow/40 bg-brand-yellow/10 px-2.5 py-0.5 rounded-full font-bold">FMらら</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 group-hover:text-amber-600 transition-colors mb-2">
+                            That's awesome!
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            週末の夜にゆったり楽しんでいただける30分間のプログラム。あなたの日常に寄り添います。
+                        </p>
+                    </div>
+                    <div class="relative z-10 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-gray-500">
+                        <span><i class="fa-solid fa-moon text-brand-yellow mr-1"></i> 毎週土曜 夜放送</span>
+                        <span class="text-brand-navy">FM 76.8MHz</span>
+                    </div>
+                </div>
+
+                <!-- 3. ラジオ川越 紀伊國屋書店 -->
+                <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 transition-all group relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-brand-blue/10 rounded-bl-full transition-all group-hover:scale-110 pointer-events-none z-0"></div>
+                    <div class="relative z-10">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-3 py-1 bg-brand-blue text-white text-xs font-bold rounded-full shadow-sm">木曜 11:00 / 土曜 18:30</span>
+                            <span class="text-xs text-brand-blue border border-brand-blue/30 bg-brand-blue/5 px-2.5 py-0.5 rounded-full font-bold">ラジオ川越 / 月替わり</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 group-hover:text-brand-blue transition-colors mb-2">
+                            紀伊國屋書店川越店presents 本に出会う15分
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            紀伊國屋書店川越店のオススメの本や物語の魅力を月替わりテーマでナビゲートする15分番組。
+                        </p>
+                    </div>
+                    <div class="relative z-10 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-gray-500">
+                        <span><i class="fa-solid fa-book text-brand-blue mr-1"></i> 紀伊國屋書店コラボ</span>
+                        <span class="text-brand-navy">FM 88.7MHz</span>
+                    </div>
+                </div>
+
+                <!-- 4. Spotify Podcast ただくだらない -->
+                <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 transition-all group relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-100 rounded-bl-full transition-all group-hover:scale-110 pointer-events-none z-0"></div>
+                    <div class="relative z-10">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-3 py-1 bg-emerald-500 text-white text-xs font-bold rounded-full shadow-sm">第2・4 水曜日 20:00配信</span>
+                            <span class="text-xs text-emerald-700 border border-emerald-300 bg-emerald-50 px-2.5 py-0.5 rounded-full font-bold">Spotify Podcast</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 group-hover:text-emerald-600 transition-colors mb-2">
+                            ただくだらない
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            ユーヘーさんと共にお送りする、肩の力を抜いてクスッと笑える気負わないカジュアルポッドキャスト番組！
+                        </p>
+                    </div>
+                    <div class="relative z-10 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-gray-500">
+                        <span><i class="fa-brands fa-spotify text-emerald-500 text-sm mr-1"></i> with ユーヘーさん</span>
+                        <a href="https://open.spotify.com/show/6Fds5ksT7YNawQLrx72LZq?si=3b88cdce858a4619" target="_blank" rel="noopener" class="text-emerald-600 hover:underline flex items-center gap-1 font-bold">
+                            Spotifyで聴く <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 5. YouTube Podcast ALOHA -->
+                <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 transition-all group relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-red-100 rounded-bl-full transition-all group-hover:scale-110 pointer-events-none z-0"></div>
+                    <div class="relative z-10">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="px-3 py-1 bg-red-500 text-white text-xs font-bold rounded-full shadow-sm">不定期配信</span>
+                            <span class="text-xs text-red-600 border border-red-200 bg-red-50 px-2.5 py-0.5 rounded-full font-bold">YouTube Podcast</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 group-hover:text-red-600 transition-colors mb-2">
+                            ALOHA 🌺
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Ayanaさんと一緒にお送りする明るくハッピーで温かいYouTube Podcast番組。
+                        </p>
+                    </div>
+                    <div class="relative z-10 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-gray-500">
+                        <span><i class="fa-brands fa-youtube text-red-600 text-sm mr-1"></i> with Ayanaさん</span>
+                        <a href="https://youtube.com/@tkofficial64?si=fjGFpmqhXN9MLQV9" target="_blank" rel="noopener" class="text-red-600 hover:underline flex items-center gap-1 font-bold">
+                            YouTube <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 出演実績・経歴 -->
+        <section id="works" class="scroll-mt-24 space-y-6">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-2xl bg-brand-blue flex items-center justify-center text-white font-bold text-lg shadow-md">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800">過去の主な実績一覧</h2>
+                    <p class="text-xs text-gray-500">ジャンル別に絞り込んでご覧いただけます</p>
+                </div>
+            </div>
+
+            <!-- タブ切り替えボタン -->
+            <div class="bg-white/80 p-2 rounded-2xl border border-gray-100 shadow-md flex flex-wrap gap-2 text-sm font-bold" id="work-tabs">
+                <button onclick="filterWorks('all')" class="tab-btn active px-4 py-2 rounded-xl bg-brand-navy text-white shadow transition-all" data-tab="all">すべて</button>
+                <button onclick="filterWorks('radio')" class="tab-btn px-4 py-2 rounded-xl text-gray-600 hover:bg-gray-100 transition-all" data-tab="radio">ラジオ・配信</button>
+                <button onclick="filterWorks('movie')" class="tab-btn px-4 py-2 rounded-xl text-gray-600 hover:bg-gray-100 transition-all" data-tab="movie">映画・演技</button>
+                <button onclick="filterWorks('model')" class="tab-btn px-4 py-2 rounded-xl text-gray-600 hover:bg-gray-100 transition-all" data-tab="model">モデル</button>
+                <button onclick="filterWorks('mc')" class="tab-btn px-4 py-2 rounded-xl text-gray-600 hover:bg-gray-100 transition-all" data-tab="mc">MC・声優</button>
+            </div>
+
+            <!-- 実績リスト -->
+            <div class="bg-white rounded-3xl p-6 md:p-8 border border-gray-100 shadow-xl shadow-gray-200/40 space-y-4" id="works-container">
+                
+                <div class="work-item movie flex flex-col sm:flex-row sm:items-center justify-between border-b border-gray-100 pb-3.5 gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="px-3 py-1 bg-brand-pink/20 text-brand-navy text-xs font-bold rounded-full shrink-0">2026.08</span>
+                        <span class="font-bold text-gray-800 text-sm md:text-base">埼玉県公式チャンネル 生活道路「法定速度」動画出演</span>
+                    </div>
+                    <a href="https://youtube.com/shorts/D89qdevkFqU?si=n6X-4vgCXW1CL5qZ" target="_blank" rel="noopener" class="text-xs bg-red-500 hover:bg-red-600 text-white font-bold px-3 py-1.5 rounded-full inline-flex items-center gap-1.5 self-start sm:self-auto transition-colors">
+                        <i class="fa-brands fa-youtube"></i> 動画を見る
+                    </a>
+                </div>
+
+                <div class="work-item radio mc flex items-center border-b border-gray-100 pb-3.5 gap-3">
+                    <span class="px-3 py-1 bg-brand-pink/20 text-brand-navy text-xs font-bold rounded-full shrink-0">2026.07</span>
+                    <span class="font-bold text-gray-800 text-sm md:text-base">ホットスタッフアドベンチャープール ラジ川ジャック担当DJ</span>
+                </div>
+
+                <div class="work-item mc flex items-center border-b border-gray-100 pb-3.5 gap-3">
+                    <span class="px-3 py-1 bg-brand-pink/20 text-brand-navy text-xs font-bold rounded-full shrink-0">2025.11</span>
+                    <span class="font-bold text-gray-800 text-sm md:text-base">第2回小えど多文化共生まつり イベントMC</span>
+                </div>
+
+                <div class="work-item model flex items-center border-b border-gray-100 pb-3.5 gap-3">
+                    <span class="px-3 py-1 bg-brand-pink/20 text-brand-navy text-xs font-bold rounded-full shrink-0">2025.11</span>
+                    <span class="font-bold text-gray-800 text-sm md:text-base">T.I.FOX様 アパレル着用モデル</span>
+                </div>
+
+                <div class="work-item radio mc flex items-center border-b border-gray-100 pb-3.5 gap-3">
+                    <span class="px-3 py-1 bg-brand-pink/20 text-brand-navy text-xs font-bold rounded-full shrink-0">2025.03</span>
+                    <span class="font-bold text-gray-800 text-sm md:text-base">めいほうスキー場 ゲレンデDJ</span>
+                </div>
+
+                <div class="work-item movie flex items-center border-b border-gray-100 pb-3.5 gap-3">
+                    <span class="px-3 py-1 bg-brand-pink/20 text-brand-navy text-xs font-bold rounded-full shrink-0">2024.03</span>
+                    <span class="font-bold text-gray-800 text-sm md:text-base">各務原地域映画『貞奴、大いに笑う』出演</span>
+                </div>
+
+                <div class="work-item mc movie flex flex-col sm:flex-row sm:items-center justify-between border-b border-gray-100 pb-3.5 gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="px-3 py-1 bg-brand-pink/20 text-brand-navy text-xs font-bold rounded-full shrink-0">2024.02</span>
+                        <span class="font-bold text-gray-800 text-sm md:text-base">可児市公式 CM声優「身近にあるかも？消費者トラブル」</span>
+                    </div>
+                    <a href="https://youtu.be/mfH99GdUEms?si=60587g7Tzoyj1V9p" target="_blank" rel="noopener" class="text-xs bg-red-500 hover:bg-red-600 text-white font-bold px-3 py-1.5 rounded-full inline-flex items-center gap-1.5 self-start sm:self-auto transition-colors">
+                        <i class="fa-brands fa-youtube"></i> 動画を見る
+                    </a>
+                </div>
+
+                <div class="work-item model flex items-center border-b border-gray-100 pb-3.5 gap-3">
+                    <span class="px-3 py-1 bg-brand-pink/20 text-brand-navy text-xs font-bold rounded-full shrink-0">2023.05</span>
+                    <span class="font-bold text-gray-800 text-sm md:text-base">株式会社FALCONER様 服飾品着用モデル</span>
+                </div>
+
+                <div class="work-item radio flex items-center border-b border-gray-100 pb-3.5 gap-3">
+                    <span class="px-3 py-1 bg-brand-pink/20 text-brand-navy text-xs font-bold rounded-full shrink-0">2023.03–12</span>
+                    <span class="font-bold text-gray-800 text-sm md:text-base">HeartFM『HEARTY PARTY』（毎週木曜 20:00-21:00 生放送）</span>
+                </div>
+
+                <div class="work-item radio flex items-center gap-3">
+                    <span class="px-3 py-1 bg-brand-pink/20 text-brand-navy text-xs font-bold rounded-full shrink-0">2022.10–2024.03</span>
+                    <span class="font-bold text-gray-800 text-sm md:text-base">FMらら『もくもく！おしゃべりランチ』（毎週木曜 11:00-13:00 生放送）</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 各種SNS ＆ お問い合わせ -->
+        <section id="sns" class="scroll-mt-24 space-y-8">
+            <div class="bg-gradient-to-br from-white via-white to-brand-pink/10 rounded-4xl p-8 md:p-12 border border-white shadow-xl shadow-gray-200/50 relative overflow-hidden">
+                <div class="text-center max-w-xl mx-auto space-y-4 mb-8">
+                    <span class="px-4 py-1 bg-brand-pink/20 text-brand-navy rounded-full text-xs font-bold inline-block">OFFICIAL LINKS</span>
+                    <h2 class="text-3xl font-black text-gray-900">SNS ＆ お問い合わせ</h2>
+                    <p class="text-gray-600 text-sm">
+                        最新情報や日常の投稿は各SNSにて発信中！<br>ぜひチェック＆フォローをお願いします。
+                    </p>
+                </div>
+
+                <!-- SNSアカウントリンクカード -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+                    <a href="https://www.instagram.com/tkofficial64?psln=MWxlYndlZ204cDJmcA==" target="_blank" rel="noopener" class="bg-white p-6 rounded-3xl border border-gray-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col items-center text-center group">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white flex items-center justify-center text-2xl shadow-md mb-3 group-hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <span class="font-bold text-gray-800">Instagram</span>
+                        <span class="text-xs text-gray-400 mt-1">@tkofficial64</span>
+                    </a>
+
+                    <a href="https://x.com/tkofficial64" target="_blank" rel="noopener" class="bg-white p-6 rounded-3xl border border-gray-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col items-center text-center group">
+                        <div class="w-14 h-14 rounded-2xl bg-black text-white flex items-center justify-center text-2xl shadow-md mb-3 group-hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <span class="font-bold text-gray-800">X (旧Twitter)</span>
+                        <span class="text-xs text-gray-400 mt-1">@tkofficial64</span>
+                    </a>
+
+                    <a href="https://youtube.com/@tkofficial64?si=fjGFpmqhXN9MLQV9" target="_blank" rel="noopener" class="bg-white p-6 rounded-3xl border border-gray-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col items-center text-center group">
+                        <div class="w-14 h-14 rounded-2xl bg-red-600 text-white flex items-center justify-center text-2xl shadow-md mb-3 group-hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <span class="font-bold text-gray-800">YouTube</span>
+                        <span class="text-xs text-gray-400 mt-1">@tkofficial64</span>
+                    </a>
+                </div>
+
+                <!-- お仕事のお問い合わせ -->
+                <div id="contact" class="bg-brand-navy rounded-3xl p-6 md:p-8 text-white text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+                    <div class="space-y-2">
+                        <div class="inline-flex items-center gap-2 text-brand-yellow text-xs font-bold">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>CONTACT WORK</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold">お仕事のご依頼・お問い合わせ</h3>
+                        <p class="text-xs md:text-sm text-gray-300">
+                            ラジオ出演、イベント司会（MC）、映画・モデル撮影などのご依頼・ご相談はメールでお気軽に！
+                        </p>
+                    </div>
+
+                    <a href="mailto:tkofficial64.office@gmail.com" class="px-6 py-3.5 bg-brand-yellow hover:bg-yellow-400 text-gray-900 font-bold rounded-2xl shadow-lg transition-all hover:scale-105 shrink-0 text-sm flex items-center gap-2">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>tkofficial64.office@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="border-t border-gray-200/60 bg-white/50 backdrop-blur-sm py-8 text-center text-xs text-gray-500 relative z-10">
+        <div class="max-w-5xl mx-auto px-4 space-y-2">
+            <p class="font-bold text-gray-700">武田 和将 / TAKEDA KAZUMASA</p>
+            <p>&copy; TAKEDA KAZUMASA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- タブ切り替えスクリプト -->
+    <script>
+        function filterWorks(category) {
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                if (btn.dataset.tab === category) {
+                    btn.classList.add('bg-brand-navy', 'text-white', 'shadow');
+                    btn.classList.remove('text-gray-600', 'hover:bg-gray-100');
+                } else {
+                    btn.classList.remove('bg-brand-navy', 'text-white', 'shadow');
+                    btn.classList.add('text-gray-600', 'hover:bg-gray-100');
+                }
+            });
+
+            const items = document.querySelectorAll('.work-item');
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
